@@ -1,7 +1,7 @@
 # emright_fw_updater
 
-Introduction
+#Introduction
 Update EMRight firmware tool
 
-Compile
+#Compile
 $ make
