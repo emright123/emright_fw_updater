@@ -7,7 +7,7 @@ Update EMRight firmware tool
 $ make
 
 # manual
- ./EMRight_FWupdate <choose number> <fw_path>
+ ./EMRight_FWupdate <choose_number> <fw_path>
   
   Choose as follows
 1-	get_FW_Version
