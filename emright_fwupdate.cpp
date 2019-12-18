@@ -83,10 +83,10 @@ int main(int argc, char **argv)
 	don't use a hard coded path; use libudev instead. */
 	fd = open(device, O_RDWR,0666);//O_NONBLOCK
 	
-	//if (fd < 0) {
-	//	perror("Unable to open device");
-	//	return 1;
-	//}
+	if (fd < 0) {
+		perror("Unable to open device");
+		return 1;
+	}
 	memset(&rpt_desc, 0x0, sizeof(rpt_desc));
 	memset(&info, 0x0, sizeof(info));
 	memset(buf, 0x0, sizeof(buf));
